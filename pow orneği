@@ -1,16 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-double pow(double us,double taban)
+void pow(double us,double taban)
 {
     double sonuc=exp(us*log(taban));
-    return sonuc;
+    printf("%f\n",sonuc);
+
 }
 
 
 
 int main()
 {
-   
+    while(1){
+         float taban,us;
+         printf("Tabanı giriniz \n");
+         scanf("%f",&taban);
+         printf("Üsü giriniz \n");
+         scanf("%f",&us);
+         pow(taban,us);
+         }
+
+
     return 0;
 }
