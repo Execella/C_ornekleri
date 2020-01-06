@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    long dizi[49]={0};
+   for(int i=0;i<1000000;i++)
+   {
+       int randomm=6+rand()%42;
+      dizi[randomm]++;
+   }
+
+    for(int i=6;i<48;i++)
+   {
+       printf("%d . eleman gelme sayisi =%f\n",i,dizi[i]*100.0/1000000);
+   }
+
+    return 0;
+}
