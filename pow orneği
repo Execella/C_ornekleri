@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+double pow(double us,double taban)
+{
+    double sonuc=exp(us*log(taban));
+    return sonuc;
+}
+
+
+
+int main()
+{
+   
+    return 0;
+}
